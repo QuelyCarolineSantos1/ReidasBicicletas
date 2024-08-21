@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei das Bicicletas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: yellow;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            color: rgb(119, 113, 113);
+            text-decoration: none;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Login Rei das Bicicletas</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="CPF" name="CPF">
+                    
+                    <label for="Senha">Senha:</label>
+                    <input type="password" id="Senha" name="Senha">
+                    
+                    <button type="submit">Login</button>
+                    <br>
+                    <a href="pass">Esqueceu sua senha?</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
