@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei das Bicicletas</title>
+    <link rel="icon" href="C:\Users\vanessa.severgnini\rei_das_bicicletas\imagens\logo2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <!-- Container de Promoção -->
+    <div class="promo-container">
+        <p>Promoção Especial! Até 20% de desconto em todos os acessórios!</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="C:\Users\vanessa.severgnini\rei_das_bicicletas\imagens\logo2.png" alt="Logo Rei das Bicicletas" class="logo">
+            <h1>Rei das Bicicletas</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Olá, o que você procura?">
+            <button>Buscar</button>
+        </div>
+        <div class="icons-container">
+            <a href="#" class="icon" data-tooltip="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="icon" data-tooltip="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="icon" data-tooltip="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="icon" data-tooltip="MInha Conta"><i class="bi bi-person"></i></a>
+            <a href="#" class="icon" data-tooltip="Carrinho"><i class="bi bi-cart"></i></a>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#">Bicicletas</a></li>
+            <li><a href="#">Componentes</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Ferramentas</a></li>
+            <li><a href="#">Vestuário e Proteções</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Monte a Sua Bike</a></li>
+        </ul>
+    </nav>
+    <section class="product-page">
+        <div class="filter">
+            <h2>Filtros</h2>
+            
+            <!-- Filtro de Categoria -->
+            <fieldset>
+                <legend>Categoria:</legend>
+                <label><input type="checkbox" id="category-mountain"> Mountain Bike</label>
+                <label><input type="checkbox" id="category-speed"> Speed</label>
+                <label><input type="checkbox" id="category-bmx"> BMX</label>
+                <label><input type="checkbox" id="category-passeio"> Passeio</label>
+            </fieldset>
+
+            <!-- Filtro de Tamanho -->
+            <fieldset>
+                <legend>Tamanho:</legend>
+                <label><input type="checkbox" id="size-16"> 16</label>
+                <label><input type="checkbox" id="size-20"> 20</label>
+                <label><input type="checkbox" id="size-24"> 24</label>
+                <label><input type="checkbox" id="size-26"> 26</label>
+                <label><input type="checkbox" id="size-29"> 29</label>
+            </fieldset>
+
+            <!-- Filtro de Marca -->
+            <fieldset>
+                <legend>Marca:</legend>
+                <label><input type="checkbox" id="brand-caloi"> Caloi</label>
+                <label><input type="checkbox" id="brand-gts"> Gts</label>
+                <label><input type="checkbox" id="brand-absolute"> Absolute</label>
+                <label><input type="checkbox" id="brand-status"> Status</label>
+            </fieldset>
+
+            <!-- Filtro de Cor -->
+            <fieldset>
+                <legend>Cor:</legend>
+                <label><input type="checkbox" id="color-red"> Vermelho</label>
+                <label><input type="checkbox" id="color-blue"> Azul</label>
+                <label><input type="checkbox" id="color-black"> Preto</label>
+                <label><input type="checkbox" id="color-white"> Branco</label>
+            </fieldset>
+
+            <!-- Filtro de Faixa de Preço -->
+            <label for="price-range">Faixa de Preço:</label>
+            <input type="range" id="price-range" min="499" max="10000" step="5000">
+            <p id="price-value">Até R$10.000</p>
+        </div>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/394779/bicicleta_29_gts_m1_freio_a_disco_21v_ride_new_color_3225_variacao_11319_1_9c998878d4202cf00ce9b5ebc8177cea.jpg" alt="Bicicleta 1">
+                <div class="details">
+                    <h3>Bicicleta 29 GTS M1</h3>
+                    <p> Freio a Disco 21v Ride New Color</p>
+                    <p>R$ 989,10</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/394779/bicicleta_gtsm1_mtb20_cambio_shimano_7v_freio_a_disco_4389_variacao_13887_1_fdfe90c8b1b488ee15c21b856fd9a29e.jpg" alt="Bicicleta 2">
+                <div class="details">
+                    <h3>Bicicleta GtsM1 mtb 20</h3>
+                    <p>Cambio shimano, 7v, freio a disco</p>
+                    <p>R$ 900,00</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/394779/bicicleta_gts_aro_29_freio_hidraulico_cubo_k7_cambios_1x12_marchas_e_suspensao_trava_no_guidao_gts_m_4246_variacao_13552_1_394a6ea61ef0777e8e89fa7c24921241.png" alt="Bicicleta 3">
+                <div class="details">
+                    <h3>Bicicleta GtsM1 29</h3>
+                    <p>Freio Hidráulico 1x12 XRX Suspensão New Expert</p>
+                    <p>R$ 2.294,10</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/394779/a_kit_de_montagem_29_tsi7_21_marchas_ride_new_magnesio_4985_variacao_15955_1_5ba0207486dc65eaeae309383d23e928.png" alt="Bicicleta 4">
+                <div class="details">
+                    <h3>Bicicleta GtsM1 29</h3>
+                    <p>FREIO MECÂNICO 21V M300 SUSPENSÃO | RIDE NEW MAGNÉSIO.</p>
+                    <p>R$ 2.190,00</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/394779/bicicleta_26_gts_m1_fat_bike_freio_hidraulico_1x11_i_vtec_fat_trail_4933_2_3eea019930eef367ff5fce909c02c40f.jpg" alt="Bicicleta 5">
+                <div class="details">
+                    <h3>Bicicleta 26 Gts M1 Fat Bike</h3>
+                    <p>Freio Hidráulico 1x11 I-vtec Fat Trail</p>
+                    <p>R$ 2.969,10</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/394779/bicicleta_gts_aro_20_freio_v_brake_sem_marchas_gts_m1_bmx_freestyle_4227_variacao_13499_1_d34ad340d8455ea29da619f0352f1409.jpg" alt="Bicicleta 6">
+                <div class="details">
+                    <h3>Bicicleta BMX gts aro 20</h3>
+                    <p>freio V-brake Sem Marchas gts m1 bmx freestyle</p>
+                    <p>R$ 1.410,30</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Atualiza o valor do preço no slider
+        const priceRange = document.getElementById('price-range');
+        const priceValue = document.getElementById('price-value');
+
+        priceRange.addEventListener('input', () => {
+            priceValue.textContent = `Até R$${priceRange.value}`;
+        });
+    </script>
+
+    <footer class="developer-info">
+        <p>Desenvolvido por <strong>JJQVY Desenvolvimento de Sites</strong></p>
+        <p>© 2024 Rei das Bicicletas. Todos os direitos reservados.</p>
+    </footer>
+
+</div>
+</body>
+</html>
