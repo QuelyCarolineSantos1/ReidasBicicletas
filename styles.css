@@ -467,3 +467,98 @@ body {
 .product-page .product-item .details a:hover {
     text-decoration: underline;
 }
+/* Estilo da seção Sobre Nós */
+.about-us {
+    background-color: #696969; /* Cor de fundo suave */
+    padding: 40px 0; /* Espaçamento vertical */
+}
+
+.about-us .container {
+    background-color: hsl(0, 0%, 85%);
+    max-width: 1000px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o container */
+    padding:  25px; /* Adiciona algum padding lateral */
+}
+
+/* Estilo do título principal */
+.about-us h2 {
+    font-size: 3rem; /* Tamanho da fonte aumentado */
+    color: #333; /* Cor do texto branco */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Espaçamento inferior */
+    font-weight: bold; /* Fonte em negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    background: linear-gradient(135deg, #ff0000, #00c6ff); /* Gradiente de fundo */
+    -webkit-background-clip: text; /* Clipa o fundo ao texto */
+    background-clip: text; /* Clipa o fundo ao texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Padding ao redor do texto */
+    position: relative; /* Para adicionar efeitos decorativos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do texto */
+}
+
+/* Adiciona uma linha abaixo do título */
+.about-us h2::after {
+    content: ''; /* Adiciona um pseudo-elemento depois do título */
+    display: block;
+    width: 80px; /* Largura da linha decorativa */
+    height: 5px; /* Altura da linha */
+    background: linear-gradient(135deg, #ff0000, #fffb00); /* Gradiente da linha */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaçamento */
+}
+
+/* Adiciona um efeito de brilho ao título */
+.about-us h2 {
+    animation: shine 1.5s infinite; /* Animação de brilho */
+}
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.about-us h3 {
+    font-size: 1.75rem; /* Tamanho da fonte dos subtítulos */
+    color: #333; /* Cor do texto dos subtítulos */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    border-bottom: 2px solid #ddd; /* Linha abaixo dos subtítulos */
+    padding-bottom: 5px; /* Espaçamento inferior */
+}
+
+.about-us p {
+    font-size: 1rem; /* Tamanho da fonte dos parágrafos */
+    color: #666; /* Cor do texto dos parágrafos */
+    line-height: 1.6; /* Altura da linha */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.about-us ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+}
+
+.about-us ul li {
+    font-size: 1rem; /* Tamanho da fonte dos itens da lista */
+    color: #333; /* Cor do texto dos itens da lista */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    padding-left: 20px; /* Espaçamento à esquerda para os itens da lista */
+    position: relative; /* Para posicionar o marcador personalizado */
+}
+
+.about-us ul li::before {
+    content: '•'; /* Marcador personalizado */
+    color: #131313; /* Cor do marcador */
+    font-size: 1.5rem; /* Tamanho do marcador */
+    position: absolute; /* Posiciona o marcador */
+    left: 0; /* Alinha o marcador à esquerda */
+    top: 0; /* Alinha o marcador ao topo */
+}
