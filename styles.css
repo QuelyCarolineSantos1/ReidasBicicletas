@@ -392,12 +392,12 @@ body {
 }
 
 .product-page .filter {
-    width: 25%;
+    width: 20%;
     padding: 30px;
-    background-color: #433e3e68;
+    background-color: #333;
     box-shadow: 2px 0 5px rgba(188, 180, 180, 0.194);
     border-right: 1px solid rgba(188, 180, 180, 0.193);
-    color: #171710;
+    color: #ffffff;
 }
 
 .product-page .filter h2 {
@@ -423,9 +423,9 @@ body {
 }
 
 .product-page .product-list {
-    width: 75%;
+    width: 80%;
     padding: 20px;
-    background-color: #433e3e68;
+    background-color: #333;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de largura igual */
     gap: 20px; /* Espaçamento entre os itens */
