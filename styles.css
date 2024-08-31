@@ -381,9 +381,6 @@ body {
     background-color: #000000cd;
 }
 
-
-
-
 /* Tela de produtos */
 .product-page {
     display: flex;
@@ -442,8 +439,9 @@ body {
 }
 
 .product-page .product-item img {
-    max-width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura disponível do item */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 300px; /* Define uma largura fixa para as imagens */
+    height: 300px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Faz com que a imagem se ajuste ao tamanho sem distorcer, cortando partes se necessário */
     margin-bottom: 10px; /* Espaçamento abaixo da imagem */
 }
 
@@ -467,6 +465,96 @@ body {
 .product-page .product-item .details a:hover {
     text-decoration: underline;
 }
+
+
+
+
+/*Componentes*/
+.componentes-page {
+    display: flex;
+    padding: 20px;
+    background-color:  #24242468;
+}
+
+.componentes-page .componentes-filter {
+    width: 20%;
+    padding: 30px;
+    background-color: #333;
+    box-shadow: 2px 0 5px rgba(188, 180, 180, 0.194);
+    border-right: 1px solid rgba(188, 180, 180, 0.193);
+    color: #ffffff;
+}
+
+.componentes-page .componentes-filter h2 {
+    margin-top: 0;
+    color: #fffb1f;
+}
+
+.componentes-page .componentes-filter label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fffb1f;
+}
+
+.componentes-page .componentes-filter input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.componentes-page .componentes-filter select, .componentes-page .componentes-filter input[type="range"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #fffb1f;
+}
+
+.componentes-page .componentes-list {
+    width: 80%;
+    padding: 20px;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de largura igual */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.componentes-page .componentes-item {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e os detalhes em coluna */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000; /* Garantia de que o texto está legível sobre o fundo branco */
+}
+
+.componentes-page .componentes-item img {
+    width: 300px; /* Define uma largura fixa para as imagens */
+    height: 300px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Faz com que a imagem se ajuste ao tamanho sem distorcer, cortando partes se necessário */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.componentes-page .componentes-item .details {
+    flex-grow: 1;
+}
+
+.componentes-page .componentes-item .details h3 {
+    margin: 0;
+}
+
+.componentes-page .componentes-item .details p {
+    margin: 10px 0;
+}
+
+.componentes-page .componentes-item .details a {
+    color: #d9c91c;
+    text-decoration: none;
+}
+
+.componentes-page .componentes-item .details a:hover {
+    text-decoration: underline;
+}
+
+
 /* Estilo da seção Sobre Nós */
 .about-us {
     background-color: #696969; /* Cor de fundo suave */
