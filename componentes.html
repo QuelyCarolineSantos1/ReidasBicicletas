@@ -47,42 +47,101 @@
             <li><a href="#">Monte a Sua Bike</a></li>
         </ul>
     </nav>
+    <section class="componentes-page">
+        <div class="componentes-filter">
+            <h2>Filtros</h2>
+            
+            <!-- Filtro de Categoria -->
+            <fieldset>
+                <legend>Categoria:</legend>
+                <label><input type="checkbox" id="category-rodas"> Rodas</label>
+                <label><input type="checkbox" id="category-quadro"> Quadro</label>
+                <label><input type="checkbox" id="category-pneus"> Pneus</label>
+                <label><input type="checkbox" id="category-suspensao"> Freio</label>
+            </fieldset>
 
-    <!-- Tela de Bicicletas -->
-    <section class="bikes-container">
-        <div class="container">
-            <h2>Componentes</h2>
-            <div class="row">
-                <!-- Item de Bicicleta 1 -->
-                <div class="col-md-4">
-                    <div class="bike-card">
-                        <img src="imagens/bike1.jpg" alt="Bicicleta 1" class="bike-image">
-                        <h3>Aro</h3>
-                        <p>Ideal para trilhas e aventuras ao ar livre. Conforto e durabilidade garantidos.</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+            <!-- Filtro de Marcas -->
+            <fieldset>
+                <legend>Marcas:</legend>
+                <label><input type="checkbox" id="brand-gts"> Gts</label>
+                <label><input type="checkbox" id="brand-shimano"> Shimano</label>
+                <label><input type="checkbox" id="brand-absolute"> Absolute</label>
+                <label><input type="checkbox" id="brand-veloforce"> Veloforce</label>
+            </fieldset>
+
+            <!-- Filtro de Cor -->
+            <fieldset>
+                <legend>Cor:</legend>
+                <label><input type="checkbox" id="color-red"> Vermelho</label>
+                <label><input type="checkbox" id="color-blue"> Azul</label>
+                <label><input type="checkbox" id="color-black"> Preto</label>
+                <label><input type="checkbox" id="color-white"> Branco</label>
+            </fieldset>
+
+            <!-- Filtro de Faixa de Preço -->
+            <label for="price-range">Faixa de Preço:</label>
+            <input type="range" id="price-range" min="499" max="5000" step="500">
+            <p id="price-value">Até R$5.000</p>
+        </div>
+
+        <div class="componentes-list">
+            <div class="componentes-item">
+                <img src="https://a-static.mlcdn.com.br/800x600/roda-aro-26-traseira-vzan-vmaxx-lt-cubo-de-rosca-freio-disco/bikediasg5/32353/af3c3681203d96f54b880f4d8ed0bdbe.jpeg" alt="Rodavmax">
+                <div class="details">
+                    <h3>Roda 26 V-Max Dh</h3>
+                    <p> Roda Aro 26 Traseira Vzan Vmaxx LT Cubo de Rosca 36 furos Freio Disco, cores diversas.</p>
+                    <p>R$ 180,00</p>
+                    <a href="#">Ver Detalhes</a>
                 </div>
-                <!-- Item de Bicicleta 2 -->
-                <div class="col-md-4">
-                    <div class="bike-card">
-                        <img src="imagens/bike2.jpg" alt="Bicicleta 2" class="bike-image">
-                        <h3>Freios</h3>
-                        <p>Perfeita para quem busca velocidade e eficiência em pistas e ruas asfaltadas.</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+            </div>
+            <div class="componentes-item">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ7nUnyH1-CgV3EP-TJ3umlQSeNCt5DC0wV6PkWpjzgY9rZv1xNpk2AUufeyEG2F4ERl62af0F_mjKpS7q-lZwiEdDPzDaoKja3LeTHDaQ8eGzr5UIz4nh7bXA&usqp=CAE" alt="Quadrohupi">
+                <div class="details">
+                    <h3>Quadro 26 Hupi Naja</h3>
+                    <p>O Quadro HUPI Naja V9 é uma evolução notável do modelo V8, projetado para superar expectativas</p>
+                    <p>R$ 1990,00</p>
+                    <a href="#">Ver Detalhes</a>
                 </div>
-                <!-- Item de Bicicleta 3 -->
-                <div class="col-md-4">
-                    <div class="bike-card">
-                        <img src="imagens/bike3.jpg" alt="Bicicleta 3" class="bike-image">
-                        <h3>Quadro</h3>
-                        <p>Combina a versatilidade de bicicletas de montanha e estrada, ideal para diversos terrenos.</p>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
+            </div>
+            <div class="componentes-item">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS4NXy25VLypUaADoieydkDM778uQFKv0QvDKcZk91e4J3SG2Q0Szqx5-6bi4uS_yL9rtxAkyCdj5RzP5Svqwm57QOpwp3U9cYYeQKPLE7MzRf00LLLNIyY&usqp=CAE" alt="Freiohidraulico">
+                <div class="details">
+                    <h3>Freio Hidraulico mt-200</h3>
+                    <p>Freio a Disco Hidráulico Shimano Altus BL-MT200 BR-MT200 Dianteiro Freio traseiro </p>
+                    <p>R$ 399,00</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="componentes-item">
+                <img src="data:image/jpeg;base64,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" alt="Bicicleta 4">
+                <div class="details">
+                    <h3>Pneu 29 Michelin</h3>
+                    <p>Pneu Michelin 29X2.40 Force AM2 Competition 3X60TPI KEVLAR TLR</p>
+                    <p>R$ 149,00</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="componentes-item">
+                <img src="https://www.pacobikes.com/wp-content/uploads/2022/07/DSC_0195.jpg" alt="Bicicleta 5">
+                <div class="details">
+                    <h3>Pneu 26 Flame Vermelho</h3>
+                    <p>Pneu Flame aro 26 x 2.50 Varias cores</p>
+                    <p>R$ 199,00</p>
+                    <a href="#">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="componentes-item">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_631065-MLB68892725884_042023-O.webp" alt="Suspensao29">
+                <div class="details">
+                    <h3>Suspensão 29 ar</h3>
+                    <p>Suspensão Aro 29 a Ar E Óleo de Magnésio</p>
+                    <p>R$ 699,00</p>
+                    <a href="#">Ver Detalhes</a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="developer-info">
