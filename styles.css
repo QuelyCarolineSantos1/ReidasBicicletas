@@ -651,14 +651,6 @@ body {
     top: 0; /* Alinha o marcador ao topo */
 }
 
-
-/* Header */
-.header {
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
-
 .logo-container {
     display: flex;
     align-items: center;
