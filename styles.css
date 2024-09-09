@@ -436,6 +436,7 @@ body {
     padding: 10px;
     background-color: #fff;
     color: #000; /* Garantia de que o texto está legível sobre o fundo branco */
+    align-items: center;
 }
 
 .product-page .product-item img {
@@ -524,6 +525,7 @@ body {
     padding: 10px;
     background-color: #fff;
     color: #000; /* Garantia de que o texto está legível sobre o fundo branco */
+    align-items: center;
 }
 
 .componentes-page .componentes-item img {
